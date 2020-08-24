@@ -12,25 +12,25 @@
 
 <body>
     <div class="jumbotron">
-        <h1 class="display-1 font-weight-bold">Call on a Student!</h1>
-        <p class="lead display-4">Let's Hear From:</p>
+        <h1 class="display-1 font-weight-bold d-flex justify-content-center">Call on a Student!</h1>
+        <p class="lead display-4 d-flex justify-content-center">Let's Hear From:</p>
         <hr class="my-4">
-        <div id="calledOn" class="font-weight-bold display-3">
+        <div id="calledOn" class="font-weight-bold display-3 d-flex justify-content-center">
             
         </div>
-        <a class="btn btn-danger btn-lg" id="callOn" role="button">Choose a Random Student!</a>
+        <a class="btn btn-danger btn-lg d-flex justify-content-center" id="callOn" role="button ">Choose a Random Student!</a>
       </div>
-    
+
 </body>
 
 <script>
 $("#callOn").on("click", function (event) {
     event.preventDefault();
-    callOnSomeone(27);    
+    callOnSomeone(28);    
 });
 
-    function callOnSomeone(result) {
-    let random = Math.floor(Math.random() * Math.floor(result));
+    function callOnSomeone(integer) {
+    let random = Math.floor(Math.random() * Math.floor(integer));
     let array = ["Andrea", "Andrew D", "Andrew K", "Ashley", "Avi", "Bobby", "Brian", "Cristhal", "Elizabeth", "Hongjing", "Isaiah", "Jivko", "Jackie",
                 "Johnson", "Jonathan", "Joe", "Justin", "Katelynn", "Kyle", "Leslie", "Michael", "Martin", "Mustafa", "Nick", "Patrick", "Sarah", "Sergey", "Yvenson" ]
     console.log("click")
